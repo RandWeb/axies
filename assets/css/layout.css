@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'nfts';
+    src: url('../fonts/nfts.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/nfts.eot') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/nfts.woff') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/nfts.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../fonts/nfts.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/nfts.svg') format('svg');
+    /* Legacy iOS */
+}
+@font-face {
+    font-family: 'brands';
+    src: url('../fonts/fa-brands-400﹖.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/fa-brands-400.eot') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/fa-brands-400.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/fa-brands-400.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../fonts/fa-brands-400.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/fa-brands-400.svg') format('svg');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'duotone';
+    src: url('../fonts/fa-duotone-900﹖.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/fa-duotone-900.eot') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/fa-duotone-900.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/fa-duotone-900.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../fonts/fa-duotone-900.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/fa-duotone-900.svg') format('svg');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'light';
+    src: url('../fonts/fa-light-300﹖.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/fa-light-300﹖.eot') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/fa-light-300.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/fa-light-300.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../fonts/fa-light-300.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/fa-light-300.svg') format('svg');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'regular';
+    src: url('../fonts/fa-regular-400﹖.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/fa-regular-400.eot') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/fa-regular-400.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/fa-regular-400.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../fonts/fa-regular-400.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/fa-regular-400.svg') format('svg');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'solid';
+    src: url("../fonts/fa-solid-900.eot");
+    /* IE9 Compat Modes */
+    src: url("../fonts/fa-solid-900.eot") format('embedded-opentype'),
+        /* IE6-IE8 */
+        url("../fonts/fa-solid-900.woff2") format('woff2'),
+        /* Super Modern Browsers */
+        url("../fonts/fa-solid-900.woff") format('woff'),
+        /* Pretty Modern Browsers */
+        url("../fonts/fa-solid-900.ttf") format('truetype'),
+        /* Safari, Android, iOS */
+        url("../fonts/fa-solid-900.svg") format('svg');
+    /* Legacy iOS */
+}
+
+
+
+@font-face {
+    font-family: 'Olivier';
+    src: url('../fonts/olivier\ Regular\ 400.ttf');
+}
+
+@font-face {
+    font-family: 'HVT';
+    src: url('../fonts/HelveticaNeue\ Thin.ttf');
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: 0;
+}
+
+:root{
+    --color-primary:#14141F;
+    --color-secondary:#343444;
+    --color-accent:#8950E6;
+    --color-ordinary:#5141FA;
+    --color-text-primary:#fff;
+    --color-text-secondary: #E9E9EA;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: "duotone";
+    background:linear-gradient(141deg,var(--color-primary) 0%,var(--color-secondary) 51%,var(--color-primary)  75%);
+
+}
+
+
+body{
+    font-size: 1.5rem;
+    font-family: 'HVT';
+    background:linear-gradient(141deg,var(--color-primary) 0%,var(--color-secondary) 51%,var(--color-primary)  75%);
+}
+
+html,body{
+display: flex;
+flex-direction: column;
+}
+main{
+    flex-grow: 1;
+}
+button{
+    cursor: pointer;
+    font-family: inherit;
+}
+ul{
+    list-style: none;
+}
+a{text-decoration: none;}
+.btn{
+    font-family: inherit;
+    padding: 1rem 2rem;
+    border-radius: 3.5rem;
+    outline: 0;
+    border: none;
+    box-shadow: none;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    border: 2px solid #5142FC;
+    color: #fff;
+    background: transparent none repeat scroll 0 0;
+    font-weight: 700;
+    letter-spacing: .1rem;
+}
+.btn:hover{
+    background: var(--color-text-primary);
+    color: var(--color-ordinary);
+    border: 2px solid var(--color-text-primary);
+}
+.btn__primary{
+    background-color: var(--color-primary);
+    color: var(--light-color);
+}
+
+.btn__primary:hover{
+    background: transparent;
+    color: var(--color-text-primary);
+    box-shadow: inset 0 0 0 .2rem var(--primary-color);
+}
+.container{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
