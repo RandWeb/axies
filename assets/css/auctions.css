@@ -1,0 +1,144 @@
+#live-auctions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30rem;
+}
+
+.auctions__top {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.auctions__top p {
+    text-transform: capitalize;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    font-size: 3.6rem;
+    font-family: 'HVT-bold';
+}
+
+.auctions__top a {
+    height: 100%;
+    z-index: 10;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.auctions__top a:hover {
+    background: linear-gradient(to right, #E250E5, #4B50E6, #E250E5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: 700;
+    background-size: 200% 200%;
+    animation: rainbow 2s ease-in-out infinite;
+    transition: color .2s ease-in-out;
+}
+
+.auctions__top a::before {
+    content: '';
+    position: absolute;
+    bottom: -0.2rem;
+    width: 100%;
+    height: .1rem;
+    background: linear-gradient(to right, #E250E5, #4B50E6, #E250E5)
+}
+
+.auctions__bottom {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.auction__card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-secondary);
+    padding: 2rem;
+    border-radius: 2rem;
+    color: var(--color-text-primary);
+    font-weight: 900;
+}
+
+.auction__card-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.auction__card-top img {
+    border-radius: 1.5rem;
+}
+
+.auction__card-like {
+    position: absolute;
+    right: 1rem;
+    top: 0;
+}
+
+.auction__card-time {
+    position: absolute;
+    bottom: 1rem;
+    display: flex;
+    right: 10rem;
+}
+
+.auction_card-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.auction__title {
+    margin-top: 1.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.auction__creator {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.creator_left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.creator_left img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+}
+
+.creator__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 1rem;
+}
+
+.creator__info span {}
+
+.creator__info p {}
+
+.creator_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

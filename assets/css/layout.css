@@ -104,6 +104,10 @@
     font-family: 'HVT';
     src: url('../fonts/HelveticaNeue\ Thin.ttf');
 }
+@font-face {
+    font-family: 'HVT-bold';
+    src: url('../fonts/Helvetica-Bold-Font.ttf');
+}
 
 
 * {
