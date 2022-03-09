@@ -1,7 +1,5 @@
 #hero {
-    height: 100vh;
     width: 100%;
-    position: relative;
 }
 
 .hero__wrapper {
@@ -49,18 +47,18 @@
 
 @keyframes circle_xr {
     0% {
-        -webkit-transform: rotate(1deg) translate(2px, 2px);
-        transform: rotate(1deg) translate(2px, 2px);
+        -webkit-transform: rotate(1deg) translate(10px, 10px);
+        transform: rotate(1deg) translate(10px, 10px);
     }
 
     50% {
-        -webkit-transform: rotate(-1deg) translate(-2px, -2px);
-        transform: rotate(-1deg) translate(-2px, -2px);
+        -webkit-transform: rotate(-1deg) translate(-10px, -10px);
+        transform: rotate(-1deg) translate(-10px, -10px);
     }
 
     100% {
-        -webkit-transform: rotate(1deg) translate(2px, 2px);
-        transform: rotate(1deg) translate(2px, 2px);
+        -webkit-transform: rotate(1deg) translate(10px, 10px);
+        transform: rotate(1deg) translate(10px, 10px);
     }
 }
 
@@ -108,11 +106,11 @@
     display: flex;
     flex-direction: column;
     padding-left: 20rem;
+    margin-top: 5rem;
 }
 
 .slider__left-top {
     width: 100%;
-    height: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -156,6 +154,7 @@
     display: flex;
     flex-direction: row;
     justify-content: start;
+    margin: 4rem 0;
 }
 .btn-explore{
     height: 6rem;

@@ -32,7 +32,7 @@
 .seller__prev{
     padding: 1rem;
     background-color: var(--color-primary);
-    color: var(--color-secondary);
+    color: var( --color-text-secondary);
     border: .1rem solid var(--color-ordinary);
     border-radius: 50%;
     margin-right: .5rem;
@@ -60,16 +60,40 @@
     align-items: center;
     font-size: 1.8rem !important;
     font-weight: 700 !important;
+    position: relative;
 }
 .seller_card img{
     border-radius: 3.5rem;
+}
+.seller_card::before{
+    font-family: 'light';
+    content: "\f00c";
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    color: var(--color-text-primary);
+    background-color: var(--color-ordinary);
+    position: absolute;
+    text-align: center;
+    line-height: 1.5;
+    top: 9rem;
+    right: -1rem;
+    z-index: 11;
 }
 .seller_card h5{
     text-align: center;
     margin: .8rem 0;
     font-size: 1.8rem;
     font-weight: 700;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.seller_card h5:hover{
+    color: var(--color-ordinary);
 }
 .seller_card span{
     text-align: center;
+    color: var(--color-text-secondary);
+    color: var(--color-text-secondary);
+    
 }
