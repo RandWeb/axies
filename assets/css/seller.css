@@ -1,0 +1,75 @@
+#top-seller{
+    margin: 6rem 0;
+    width: 100%;
+    display: flex;
+    padding: 0 24rem;
+    flex-direction: column;
+    font-family: 'Urbanist', sans-serif;
+}
+.seller__top{
+    display: flex;
+    font-family: '';
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 3.6rem;
+    font-weight: 700;
+    padding:  4rem 2rem;
+}
+
+.seller__top-left{
+    letter-spacing: .1rem;
+    text-transform: capitalize;
+    color: var(--color-text-primary);
+}
+
+.seller__top-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 2rem;
+}
+
+.seller__prev{
+    padding: 1rem;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border: .1rem solid var(--color-ordinary);
+    border-radius: 50%;
+    margin-right: .5rem;
+}
+.seller__next{
+    background-color: var(--color-text-primary);
+    color: var(--color-ordinary);
+    border-radius: 50%;
+    padding: 1rem;
+    margin-right: .5rem;
+}
+
+.seller__bottom{
+    display: flex;
+    flex-direction: row;
+    color: var(--color-text-primary);
+    overflow: hidden;
+}
+
+.seller_card{
+    width: 10rem;
+    display: flex;
+    margin: 0 3rem;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.8rem !important;
+    font-weight: 700 !important;
+}
+.seller_card img{
+    border-radius: 3.5rem;
+}
+.seller_card h5{
+    text-align: center;
+    margin: .8rem 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.seller_card span{
+    text-align: center;
+}
