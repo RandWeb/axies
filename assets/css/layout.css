@@ -121,6 +121,7 @@
 }
 
 :root{
+    --bg-footer:#0d0d11;
     --color-primary:#14141F;
     --color-secondary:#343444;
     --color-accent:#8950E6;
