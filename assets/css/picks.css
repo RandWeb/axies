@@ -1,0 +1,387 @@
+#picks {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Urbanist', sans-serif;
+    padding: 10rem;
+    color: var(--color-text-primary);
+}
+
+.picks__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--color-text-primary);
+    font-family: 'Urbanist', sans-serif;
+}
+
+.picks__top h2 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.picks__top a {
+    font-size: 1.4rem;
+    letter-spacing: .14rem;
+    font-weight: 700;
+    color: var(--color-ordinary);
+    position: relative;
+    line-height: 4rem;
+    transition: all .4s ease-in-out;
+    text-transform: uppercase;
+
+}
+
+.picks__top a:hover {
+    background: linear-gradient(216.56deg, #E250E5 5.32%, #4B50E6 94.32%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.picks__top a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 1rem;
+    width: 100%;
+    height: .1rem;
+    background: linear-gradient(216.56deg, #E250E5 5.32%, #4B50E6 94.32%);
+}
+
+.btn-pick {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 1.5rem;
+    border: .1rem solid #adadad;
+    transition: all .4s ease-in-out;
+    border-radius: 4rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.btn-pick svg {
+    margin-right: 1rem;
+}
+
+.btn-pick:hover {
+    border: .1rem solid var(--color-ordinary);
+}
+
+.picks__middle {
+    display: flex;
+    margin: 3rem 0;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.picks__middle-left {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-right: 35rem;
+}
+
+.picks__middle-right {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    flex-direction: row;
+}
+
+.picks__bottom {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.picks__card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-secondary);
+    padding: 2rem;
+    margin: 1rem 1.8rem;
+    border-radius: 2rem;
+    color: var(--color-text-primary);
+    font-weight: 900;
+}
+
+.picks__card-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.picks__card-top img {
+    border-radius: 1.5rem;
+}
+
+.picks__card-coming {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    text-transform: capitalize;
+    padding: 1rem 2.2rem;
+    background-color: #FFBD0C;
+    color: var(--color-secondary);
+    border-radius: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.picks__card-like {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    padding: .5rem 1rem;
+    background-color: var(--color-primary);
+    border-radius: .6rem;
+}
+
+
+.picks__card-time {
+    padding: .5rem 1rem;
+    background-color: var(--color-primary);
+    border-radius: .6rem;
+    position: absolute;
+    bottom: 1rem;
+    display: flex;
+    right: 7rem;
+}
+
+.picks__card-time::before {
+    content: '\e900';
+    font-family: 'nfts';
+    color: var(--color-ordinary);
+    font-size: 1.8rem;
+    padding-right: 1rem;
+}
+
+.picks__card-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Urbanist', sans-serif;
+}
+
+.picks__title {
+    margin-top: 1.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.picks__title h5 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: .1rem;
+    font-style: normal;
+    color: var(--color-text-primary);
+    font-variant: normal;
+    text-transform: capitalize;
+    text-decoration: none solid rgb(81, 66, 252);
+    text-align: start;
+    text-indent: 0rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.picks__title h5:hover {
+    color: var(--color-ordinary);
+}
+
+.picks__title span {
+    background-color: var(--color-ordinary);
+    padding: 0.4rem .8rem;
+    border-radius: 1rem;
+}
+
+.picks__creator {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.creator_left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.creator_left img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+}
+
+.creator__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 1rem;
+}
+
+.creator__info span {
+    color: var(--color-text-secondary);
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.creator__info a {
+    color: var(--color-text-primary);
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.creator__info a:hover {
+    color: var(--color-ordinary);
+}
+
+.creator_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.creator_right span {
+    color: var(--color-text-secondary);
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.creator_right h5 {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.picks__card {
+    transition: all .3s ease-in-out;
+}
+
+.picks__card:hover {
+    transform: translateY(-.5rem);
+}
+
+.picks__card:hover .card__img {
+    transform: scale(1.05);
+}
+
+.piks__card-bottom--bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.picks__card-bag {
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 2.5rem;
+    text-transform: capitalize;
+    padding: 1.5rem 2.5rem;
+    background-color: var(--color-secondary);
+    color: var(--color-text-primary);
+    border: .1rem solid var(--color-ordinary);
+    transition: all .3s ease-out;
+}
+
+.picks__card-history {
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 2.5rem;
+    text-transform: capitalize;
+    padding: 1.5rem;
+    color: var(--color-text-primary);
+    transition: all .3s ease-out;
+}
+
+.picks__card-bag:hover {
+    background-color: var(--color-text-primary);
+    color: var(--color-primary);
+}
+
+.picks__card-bag i {
+    color: var(--color-text-primary);
+    padding-right: .5rem;
+}
+
+.picks__card-bag:hover i {
+    color: var(--color-ordinary);
+}
+
+.picks__card-bag:hover {
+    visibility: visible;
+    top: 41%;
+}
+
+.picks__card-history {
+    display: flex;
+    flex-direction: row;
+    letter-spacing: .09rem;
+}
+
+.i-history {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'nfts';
+
+}
+
+.i-history::before {
+    content: "\e91c";
+    position: absolute;
+    top: 0;
+    right: 1rem;
+}
+
+.picks__card-history p:hover {
+    color: var(--color-ordinary);
+    transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.picks__bottom .picks__card:nth-child(2) .piks__card-bottom--bottom {
+    display: none;
+}
+
+.picks__bottom .picks__card:not(.picks__card:nth-child(2)) .picks__card-coming {
+    display: none;
+}
+
+.picks__more {
+    display: flex;
+    margin: 2rem auto;
+    padding: 1.5rem 2.5rem;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+    width: 10%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    border-radius: 4rem;
+    background-color: var(--color-primary);
+    border: .1rem solid var(--color-text-primary);
+    text-transform: capitalize;
+    transition: all .4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.picks__more:hover {
+    color: var(--color-primary);
+    background-color: var(--color-text-primary);
+}
