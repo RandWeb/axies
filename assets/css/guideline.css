@@ -1,0 +1,84 @@
+#guideline{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--color-text-primary);
+    width: 100%;
+    font-family: "Urbanist" ,sans-serif;
+    padding: 5rem 10rem;
+}
+
+#guideline h2{
+    font-size:3.6rem ;
+    font-weight: 700;
+    padding: 4rem 0;
+
+}
+.guideline__steps{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-items: start;
+}
+
+.guideline__step{
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    
+}
+
+.guideline__step-icon{
+    font-family: "nfts";
+    margin: 1rem 0;
+    position: relative;
+    width: 80%;
+    height: 100%;
+    padding: 4rem 0 4rem 2rem;
+    margin-right: 2rem;
+}
+.guideline__step-icon::before{
+    content: '\e91e';
+    position: absolute;
+    top: 0;
+    border-radius: 1rem;
+    left: 2rem;
+    font-size: 7.9rem;
+    color: var(--color-text-primary);
+    background: var(--color-ordinary);
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    transition: all .5s;
+}
+.guideline__step-icon:hover::before{
+transform: rotateY(360deg);
+}
+.guideline__step-heading{
+font-size: 2.4rem;
+font-weight: 700;
+padding: 2rem;
+}
+.guideline__step-heading a{
+    color: var(--color-text-primary1);
+    transition: color .3s ease-in-out;
+}
+.guideline__step-heading a:hover{
+    color: var(--color-ordinary);
+}
+.guideline__step-content{
+padding:0 2rem;
+font-size: 1.4rem;
+font-weight: 400;
+}
+
+.guideline__steps .guideline__step:nth-child(2) .guideline__step-icon::before{
+    background-color: #47A432;
+}
+.guideline__steps .guideline__step:nth-child(3) .guideline__step-icon::before{
+    background-color: #9835FB;
+}
+.guideline__steps .guideline__step:nth-child(4) .guideline__step-icon::before{
+    background-color: #DF4949;
+}
