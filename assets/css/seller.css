@@ -2,7 +2,7 @@
     margin: 6rem 0;
     width: 100%;
     display: flex;
-    padding: 0 24rem;
+    padding: 0 21.8rem;
     flex-direction: column;
     font-family: 'Urbanist', sans-serif;
 }
@@ -13,10 +13,11 @@
     justify-content: space-between;
     font-size: 3.6rem;
     font-weight: 700;
-    padding:  4rem 2rem;
+    padding:  4rem 0rem;
 }
 
 .seller__top-left{
+    font-family: 'Urbanist', sans-serif;
     letter-spacing: .1rem;
     text-transform: capitalize;
     color: var(--color-text-primary);
@@ -53,7 +54,7 @@
 }
 
 .seller_card{
-    width: 10rem;
+    width: 10.5rem;
     display: flex;
     margin: 0 3rem;
     flex-direction: column;
