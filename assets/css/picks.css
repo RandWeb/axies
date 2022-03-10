@@ -100,7 +100,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding: 1rem 0;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     overflow: hidden;
 }
@@ -110,7 +110,7 @@
     flex-direction: column;
     background-color: var(--color-secondary);
     padding: 2rem;
-    margin: 1rem 1.8rem;
+    margin: 1rem .8rem;
     border-radius: 2rem;
     color: var(--color-text-primary);
     font-weight: 900;
