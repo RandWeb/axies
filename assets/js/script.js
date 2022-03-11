@@ -1,3 +1,20 @@
+/***
+ * header
+ */
+
+let container = document.querySelector('.container')
+container.addEventListener('click',()=>{
+    let searchBox = document.querySelector('.header__search-box');
+    console.log(window.getComputedStyle(searchBox, null).display);
+    if(window.getComputedStyle(searchBox, null).getPropertyValue('display') == 'flex'){
+        console.log('container')
+        searchBox.style.display = "none";
+    }
+})
+let iconSearch = document.querySelector('.search__icon')
+iconSearch.addEventListener('click', ()=>{
+    document.getElementsByClassName('header__search-box').style.display = "flex";
+})
 /**
  * popular pictures
  */

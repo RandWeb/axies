@@ -1,83 +1,80 @@
 #header {
-    height: 8vh;
     width: 100%;
+    z-index: 20;
     background-color: var(--color-primary);
     color: var(--color-text-primary);
     position: fixed;
-    top: -20rem;
+    top: 0;
     border-bottom: .01rem solid #fefefe;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    height: 10vh;
 }
 
 .header__wrapper {
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 101%;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly
+    justify-content: space-between
 }
 
 .header__left {
-    width: 100%;
+    width: 20%;
     padding-left: 2rem;
 }
 
 .header__center {
-    width: 100%;
+    width: 50%;
     display: flex;
     flex-direction: column;
+}
+
+.header__right {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    position: relative;
 }
 
 .navbar {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    padding: 0;
 }
 
 .navbar__link {
     cursor: pointer;
-    width: 100%;
-    padding: 0 4rem;
+    width: 14%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: row;
-    font-family: 'HVT';
-    font-size: 2rem;
-    font-weight: 900;
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.navbar__link span {
-    width: 100%;
-    font-weight: bolder;
+.navbar__link:hover {
+    color: var(--color-ordinary);
 }
 
 .navbar__link i {
-    width: 100%;
-    padding: .4rem;
-    font-size: 1rem;
-}
-
-.header__right {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-}
-
-.header__search {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
+    width: 2.4rem;
+    padding-left: .5rem;
+    padding-top: .5rem;
+    font-size: 1.5rem;
 }
 
 .search__icon {
-    width: 100%;
     display: flex;
     flex-direction: column;
-    padding:0 2rem;
+    padding: 0 2rem;
     position: relative;
     right: 0;
+    cursor: pointer;
 }
 
 .header__search-box {
@@ -85,46 +82,95 @@
     display: flex;
     flex-direction: row-reverse;
     height: 4.5rem;
-    width: 20rem;
-    top: 3.2rem;
-    right: 2rem;
+    width: 25rem;
+    top: 4.5rem;
+    right: 3rem;
     border-radius: 1.5rem;
-    overflow: hidden;
+    transition: all .4s;
 }
-.header__search-box i{
+
+.disable-search {
+    visibility: hidden;
+}
+
+.active-search {
+    visibility: visible;
+}
+
+.header__search-box i {
     color: var(--color-primary);
     position: absolute;
     top: 1.39rem;
     right: .5rem;
 }
-.search__box-input{
-width: 100%;
-padding-left: 1rem;
+
+.search__box-input {
+    width: 100%;
+    padding-left: 1rem;
 }
-.search__box-input::placeholder{
+
+.search__box-input::placeholder {
     color: var(--color-primary);
 }
+
 .header__wallet {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-secondary);
-    width: 15rem;
+    background-color: var(--color-primary);
+    padding: 1rem 2.5rem;
+    border: .2rem solid var(--color-ordinary);
     cursor: pointer;
-    height: 2.5rem;
-    margin-right: 2rem;
-    border-radius: 1rem;
+    margin-right: 6rem;
+    border-radius: 5rem;
+    transition: all .3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    text-transform: capitalize;
+}
+
+.header__wallet:hover, .header__wallet:hover a {
+    background-color: var(--color-text-primary);
+    color: var(--color-ordinary);
+}
+
+.header__wallet i {
+    margin-right: 1rem;
+}
+
+.header__mode {
+    width: 21rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    padding-right: .5rem;
+}
+
+.header__mode h5 b {
+    font-size: 1.8rem;
 }
 
 .header__sun {
-    width: 100%;
-    width: 2.4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 4rem;
     cursor: pointer;
-    
+    margin-left: 1rem;
+    padding: .5rem .8rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: var(--color-secondary);
 }
 
 .header__moon {
-    width: 100%;
-    width: 2.4rem;
+    width: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--color-secondary);
     margin: 0 2rem;
+    padding: .6rem .8rem;
+    border-radius: 1rem;
+    cursor: pointer;
 }
