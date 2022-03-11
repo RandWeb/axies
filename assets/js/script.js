@@ -5,14 +5,12 @@
  document.addEventListener('mouseup', function (e) {
     var container = document.querySelector('.header__search-box');
     if (!container.contains(e.target)) {
-        container.style.display = 'none';
-        console.log('invisible');
+        container.classList.remove('active-search')
     }
 });
 let iconSearch = document.querySelector('.search__icon')
 iconSearch.addEventListener('click', () => {
-    console.log('visible');
-    document.getElementsByClassName('header__search-box')[0].style.display = "flex";
+    document.querySelector('.header__search-box').classList.add('active-search');
 })
 /**
  * popular pictures

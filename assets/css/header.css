@@ -83,18 +83,18 @@
     flex-direction: row-reverse;
     height: 4.5rem;
     width: 25rem;
-    top: 4.5rem;
+    top: 0rem;
+    margin-top: 2rem;
     right: 3rem;
     border-radius: 1.5rem;
-    transition: all .4s;
+    visibility: hidden;
     overflow: hidden;
 }
 
-.disable-search {
-    visibility: hidden;
-}
-
 .active-search {
+    transition: all .4s;
+    transform: translateY(4rem);
+    animation: cubic-bezier(0.075, 0.82, 0.165, 1);
     visibility: visible;
 }
 
@@ -131,6 +131,7 @@
 .header__wallet:hover, .header__wallet:hover a {
     background-color: var(--color-text-primary);
     color: var(--color-ordinary);
+    border: .2rem solid var(--color-text-primary);
 }
 
 .header__wallet i {
