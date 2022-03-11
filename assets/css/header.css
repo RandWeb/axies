@@ -79,7 +79,7 @@
 
 .header__search-box {
     position: absolute;
-    display: none;
+    display: flex;
     flex-direction: row-reverse;
     height: 4.5rem;
     width: 25rem;
