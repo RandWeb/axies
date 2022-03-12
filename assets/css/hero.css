@@ -9,6 +9,7 @@
     position: relative;
     margin-top: 3rem;
     height: 100%;
+    font-family: 'Urbanist', sans-serif;
 }
 
 @keyframes moveSlider {
@@ -115,14 +116,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-transform: capitalize;
 }
 .slider__title{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    font-family: 'HVT';
     margin: 2rem 0;
-    font-size: 56px;
+    font-size: 3.8rem;
     font-weight: 700;
 }
 .slider__title h1{
@@ -141,12 +142,12 @@
 }
 .slider__description {
     width: 100%;
-    font-family: 'HVT';
     letter-spacing: .1rem;
-    font-size: 20px;
-    line-height: 30px;
+    line-height: 3rem;
     color: #EBEBEB;
     text-transform: capitalize;
+    font-size: 1.8;
+    font-weight: 500;
 }
 
 .slider__left-bottom {
@@ -185,6 +186,9 @@
 
  .btn-create i{
      margin-right: 2rem;
+ }
+ .bg-circle{
+     position: relative;
  }
 .shape {
     background: linear-gradient(216.56deg, #E250E5 5.32%, #4B50E6 94.32%);

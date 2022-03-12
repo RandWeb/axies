@@ -12,6 +12,14 @@ let iconSearch = document.querySelector('.search__icon')
 iconSearch.addEventListener('click', () => {
     document.querySelector('.header__search-box').classList.add('active-search');
 })
+
+document.querySelector('.menu').addEventListener('click', () => {
+    console.log('menu');
+    document.querySelectorAll('.target').forEach((item) => {
+        item.classList.toggle('change');
+        console.log('target');
+    });
+});
 /**
  * popular pictures
  */
