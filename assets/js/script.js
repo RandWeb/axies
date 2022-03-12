@@ -1,8 +1,8 @@
 /***
  * header
  */
-
- document.addEventListener('mouseup', function (e) {
+// search box
+document.addEventListener('mouseup', function (e) {
     var container = document.querySelector('.header__search-box');
     if (!container.contains(e.target)) {
         container.classList.remove('active-search')
@@ -13,6 +13,7 @@ iconSearch.addEventListener('click', () => {
     document.querySelector('.header__search-box').classList.add('active-search');
 })
 
+//showing header
 document.querySelector('.menu').addEventListener('click', () => {
     console.log('menu');
     document.querySelectorAll('.target').forEach((item) => {
@@ -20,6 +21,33 @@ document.querySelector('.menu').addEventListener('click', () => {
         console.log('target');
     });
 });
+
+//submenu
+
+
+let navLinks = document.querySelectorAll('.navbar__link')
+navLinks.forEach((item)=>{
+   item.addEventListener('click', (e) => {
+        let submenu=item.querySelector('.sub__menu-one');
+         removeClassActiveSubmenu();
+        submenu.classList.add('active-submenu')
+        console.log(submenu);
+    });
+});
+
+function removeClassActiveSubmenu(){
+    document.querySelectorAll('.sub__menu-one').forEach(item=>{
+        item.classList.remove('active-submenu');
+    })
+}
+
+document.addEventListener('mouseup', function (e) {
+    var container = document.querySelector('.navbar');
+    if (!container.contains(e.target)) {
+        removeClassActiveSubmenu();
+    }
+});
+
 /**
  * popular pictures
  */

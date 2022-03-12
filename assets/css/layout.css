@@ -128,6 +128,7 @@
     --color-ordinary:#5141FA;
     --color-text-primary:#fff;
     --color-text-secondary: #E9E9EA;
+    --color-text-accent: #000f;
 }
 html{
     font-size: 62.5%;
