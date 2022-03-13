@@ -74,9 +74,16 @@
 }
 
 .btn-pick:hover {
+    transition: all .3s ease;
     border: .1rem solid var(--color-ordinary);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
-
+.btn-pick:active
+{
+    transition: all .3s ease;
+    background: var(--color-primary);
+    color: var(--color-text-primary);
+}
 .picks__middle {
     display: flex;
     margin: 3rem 0;

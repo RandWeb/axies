@@ -192,7 +192,7 @@
 
 #header.change {
     top: 0rem;
-    transition: top .4s .4s;
+    transition: top .2s .2s;
 }
 
 .menu {
@@ -223,7 +223,7 @@
 
 .menu.change {
     top: 12rem;
-    transition: top .3s .4s;
+    transition: top .1s .2s;
 }
 
 .sub__menu-one::before {
