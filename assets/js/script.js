@@ -1,3 +1,29 @@
+/**
+ * 
+ * switching theme
+ */
+const lihteMode = document.querySelector('.header__sun');
+const darkMode = document.querySelector('.header__moon');
+let mode = document.querySelector('.header__mode h5');
+lihteMode.addEventListener('click',()=>{
+     let root = document.querySelector('html');
+     if(!root.classList.contains('theme-light')){
+        root.classList.remove('theme-dark');
+        root.classList.add('theme-light');
+        mode.innerHTML="light mode<br/><b>available</b>"
+     }
+})
+darkMode.addEventListener('click',()=>{
+     let root = document.querySelector('html');
+    let mode = document.querySelector('.header__mode h5');
+        if(!root.classList.contains('theme-dark')){
+            root.classList.remove('theme-light');
+            root.classList.add('theme-dark')
+            mode.innerHTML="dark mode<br/><b>available</b>"
+        }
+
+})
+
 /***
  * header
  */

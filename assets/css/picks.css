@@ -57,15 +57,20 @@
     border: .1rem solid #adadad;
     transition: all .4s ease-in-out;
     border-radius: 4rem;
+    color: var(--color-primary);
     cursor: pointer;
     font-size: 1.6rem;
     font-weight: 700;
+    background: var(--color-text-primary);
     text-transform: capitalize;
     margin-right: .5rem;
 }
 
 .btn-pick svg {
     margin-right: 1rem;
+    padding: .2rem;
+    border-radius: 50%;
+    background-color: var(--color-ordinary);
 }
 
 .btn-pick:hover {

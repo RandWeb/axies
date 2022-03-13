@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @font-face {
     font-family: 'nfts';
     src: url('../fonts/nfts.eot');
@@ -14,6 +15,7 @@
         url('../fonts/nfts.svg') format('svg');
     /* Legacy iOS */
 }
+
 @font-face {
     font-family: 'brands';
     src: url('../fonts/fa-brands-400﹖.eot');
@@ -105,6 +107,7 @@
     font-family: 'HVT';
     src: url('../fonts/HelveticaNeue\ Thin.ttf');
 }
+
 @font-face {
     font-family: 'HVT-bold';
     src: url('../fonts/Helvetica-Bold-Font.ttf');
@@ -120,45 +123,65 @@
     border: 0;
 }
 
-:root{
-    --bg-footer:#0d0d11;
-    --color-primary:#14141F;
-    --color-secondary:#343444;
-    --color-accent:#8950E6;
-    --color-ordinary:#5141FA;
-    --color-text-primary:#fff;
+.theme-dark {
+    --bg-footer: #0d0d11;
+    --color-primary: #14141F;
+    --color-secondary: #343444;
+    --color-accent: #8950E6;
+    --color-ordinary: #5141FA;
+    --color-text-primary: #fff;
     --color-text-secondary: #E9E9EA;
     --color-text-accent: #000f;
 }
-html{
+
+.theme-light {
+    --bg-footer: #ffffff38;
+    --bg-menu: #ffffff38;
+    --color-primary: #D7E6F0;
+    --color-secondary: #e6f5ff;
+    --color-accent: #8950E6;
+    --color-ordinary: #7EB9EE;
+    --color-text-primary: #596eab;
+    --color-text-secondary: #74736b;
+    --color-text-accent: #e4edf1;
+}
+
+html {
     font-size: 62.5%;
     scroll-behavior: smooth;
     font-family: "duotone";
-    background:var(--color-primary) ;
+    background: var(--color-primary);
 
 }
 
-
-body{
+body {
     font-size: 1.5rem;
-    font-family: 'HVT';}
-
-html,body{
-display: flex;
-flex-direction: column;
+    font-family: 'HVT';
 }
-main{
+
+html, body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
     flex-grow: 1;
 }
-button{
+
+button {
     cursor: pointer;
     font-family: inherit;
 }
-ul{
+
+ul {
     list-style: none;
 }
-a{text-decoration: none;}
-.btn{
+
+a {
+    text-decoration: none;
+}
+
+.btn {
     font-family: inherit;
     padding: 1rem 2rem;
     border-radius: 3.5rem;
@@ -168,28 +191,31 @@ a{text-decoration: none;}
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
-    border: 2px solid #5142FC;
-    color: #fff;
+    border: 2px solid var(--color-ordinary);
+    color: var(--color-text-primary);
     background: transparent none repeat scroll 0 0;
     font-weight: 700;
     letter-spacing: .1rem;
 }
-.btn:hover{
+
+.btn:hover {
     background: var(--color-text-primary);
     color: var(--color-ordinary);
     border: 2px solid var(--color-text-primary);
 }
-.btn__primary{
+
+.btn__primary {
     background-color: var(--color-primary);
     color: var(--light-color);
 }
 
-.btn__primary:hover{
+.btn__primary:hover {
     background: transparent;
     color: var(--color-text-primary);
     box-shadow: inset 0 0 0 .2rem var(--primary-color);
 }
-.container{
+
+.container {
     width: 100%;
     height: 101%;
     margin: 0 auto;

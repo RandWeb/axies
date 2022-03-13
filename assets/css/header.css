@@ -119,6 +119,7 @@
 
 .search__box-input {
     width: 100%;
+    background-color: var(--color-text-primary);
     padding-left: 1rem;
 }
 

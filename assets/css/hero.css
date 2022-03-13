@@ -144,7 +144,7 @@
     width: 100%;
     letter-spacing: .1rem;
     line-height: 3rem;
-    color: #EBEBEB;
+    color: var(--color-text-secondary);
     text-transform: capitalize;
     font-size: 1.8;
     font-weight: 500;
