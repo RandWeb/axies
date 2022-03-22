@@ -1,0 +1,364 @@
+.login__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.login__left {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    background-color: #161D30;
+}
+
+.login__left img {
+    width: 90%;
+}
+
+@keyframes rotateright {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotateleft {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+
+.login__right {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 40vw;
+    right: 0;
+    padding: 0 1rem;
+    text-transform: capitalize;
+    background-color: #292F45;
+    color: #E5EBF7;
+    z-index: 10;
+
+}
+.login__right::before {
+    content: "";
+    width: calc(100% - 10rem);
+    height: calc(100% - 40rem);
+    position: absolute;
+    transform: rotate(50deg);
+    right: 40rem;
+    top: 10rem;
+    z-index: -5;
+    background-color: inherit;
+    border-radius: 40%;
+    opacity: .5;
+    animation: rotateright 20s infinite;
+}
+.login__right::after {
+    content: "";
+    width: calc(100% - 40rem);
+    height: calc(100% - 40rem);
+    position: absolute;
+    transform: rotate(50deg);
+    right: 40rem;
+    bottom: 10rem;
+    z-index: -5;
+    background-color: inherit;
+    border-radius: 40%;
+    opacity: .5;
+    animation: rotateleft 15s infinite;
+}
+.form__wrapper form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 4rem 0;
+    width: 100%;
+    height: 70%;
+}
+
+.form__wrapper form input {
+    padding: 1.5rem 1rem;
+    text-transform: capitalize;
+    border-radius: .2rem;
+}
+
+input[type="submit"] {
+    background-color: #7367EF;
+    color: inherit;
+}
+
+.create__account {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.4rem;
+    letter-spacing: .1rem;
+    text-align: center;
+    margin: 3rem auto;
+}
+.create__account a {
+    padding-left: .5rem;
+}
+
+.login__social {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top: .2rem solid #32384E;
+}
+
+.login__social::before {
+    content: 'or';
+    z-index: 9999;
+    text-transform: lowercase;
+    color: white;
+    background-color: #292F45;
+    position: absolute;
+    padding: 0 .5rem;
+    text-align: center;
+    top: -1rem;
+}
+
+.social__link {
+    margin: 2rem .5rem;
+    cursor: pointer;
+    color: white;
+    border-radius: 30%;
+    padding: 1rem;
+    font-size: 2rem;
+    transition: animation .3s;
+}
+
+.social__link:hover i {
+    animation: pulse 3s infinite;
+}
+
+.twitter {
+    background: #00aced;
+}
+
+.facebook {
+    background: #3b5998;
+}
+
+.discord {
+    background: #404eed;
+}
+
+.youtube {
+    background: #bb0000;
+}
+
+
+.login__btn {
+    align-items: center;
+    width: 100%;
+    background: #7367EF;
+    border-radius: .2rem;
+    box-shadow: 0 1.4rem 2.8rem rgba(0, 0, 0, 0.25), 0 1rem 1rem rgba(0, 0, 0, 0.22);
+    display: flex;
+    justify-content: center;
+    height: 4.5rem;
+    position: relative;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.text {
+    color: white;
+    position: absolute;
+    transition: opacity 300ms;
+    user-select: none;
+    -moz-user-select: none;
+}
+
+.fingerprint {
+    height: 6.5rem;
+    left: -2.3rem;
+    opacity: 0;
+    position: absolute;
+    stroke: #777;
+    top: -.9rem;
+    transition: opacity 1ms;
+}
+
+.fingerprint-active {
+    stroke: #fff;
+}
+
+.fingerprint-out {
+    opacity: 1;
+}
+
+.odd {
+    stroke-dasharray: 0px 5rem;
+    stroke-dashoffset: .1rem;
+    transition: stroke-dasharray 1ms;
+}
+
+.even {
+    stroke-dasharray: 5rem 5rem;
+    stroke-dashoffset: -4.1rem;
+    transition: stroke-dashoffset 1ms;
+}
+
+.ok {
+    opacity: 0;
+}
+
+.active.login__btn {
+    animation: 6s loginBtn;
+}
+
+.active .text {
+    opacity: 0;
+    animation: 6s Text forwards;
+}
+
+.active .fingerprint {
+    opacity: 1;
+    transition: opacity 300ms 200ms;
+}
+
+.active .fingerprint-base .odd {
+    stroke-dasharray: 5rem 5rem;
+    transition: stroke-dasharray 800ms 100ms;
+}
+
+.active .fingerprint-base .even {
+    stroke-dashoffset: 0px;
+    transition: stroke-dashoffset 800ms;
+}
+
+.active .fingerprint-active .odd {
+    stroke-dasharray: 5rem 5rem;
+    transition: stroke-dasharray 2000ms 1500ms;
+}
+
+.active .fingerprint-active .even {
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 2000ms 1300ms;
+}
+
+.active .fingerprint-out {
+    opacity: 0;
+    transition: opacity 300ms 4100ms;
+}
+
+.active .ok {
+    opacity: 1;
+    animation: 6s Ok forwards;
+}
+
+@keyframes loginBtn {
+    0% {
+        width: 15rem;
+        border-radius: 100%;
+    }
+
+    6% {
+        width: 5rem;
+    }
+
+    71% {
+        transform: scale(1);
+        border-radius: 100%
+    }
+
+    75% {
+        transform: scale(1.2);
+        border-radius: 100%
+    }
+
+    77% {
+        transform: scale(1);
+        border-radius: 80%
+    }
+
+    94% {
+        width: 5rem;
+        border-radius: 40%
+    }
+
+    100% {
+        width: 15rem;
+        border-radius: .2rem
+    }
+}
+
+@keyframes Text {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    6% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    94% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes Ok {
+    0% {
+        opacity: 0
+    }
+
+    70% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    75% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    77% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    92% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    96% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    100% {
+        opacity: 0
+    }
+}
