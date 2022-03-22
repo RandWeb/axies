@@ -1,0 +1,133 @@
+.vertical__social {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100vh;
+    filter: url("#goo");
+    position: fixed;
+    top: 10rem;
+    right: 0;
+    z-index: 9999;
+}
+
+.button {
+    z-index: 99999;
+    position: fixed;
+    display: flex;
+    right: 5rem;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: linear-gradient(45deg, #b388eb, #8093f1);
+    border-radius: 2rem;
+    color: #fff;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    font-weight: 200;
+    transition: height 0.5s 0.2s;
+}
+
+.button i {
+    z-index: 9999999;
+}
+
+.button:hover {
+    height: 15rem;
+    cursor: pointer;
+    animation: none;
+}
+
+.button.show {
+    height: 15rem;
+}
+.button.show {
+    height: 15rem;
+    animation: none;
+}
+
+.socials {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    z-index: 999;
+}
+
+.social {
+    opacity: 0;
+    z-index: 999;
+    position: relative;
+    margin: 0.1rem;
+    width: 4rem;
+    height: 4rem;
+    right: 5rem;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.social i {
+    margin-top: 1rem;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.21);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.social:hover i {
+    cursor: pointer;
+    animation: pulse 3s infinite;
+}
+
+.twitter {
+    background: #00aced;
+}
+
+.facebook {
+    background: #3b5998;
+}
+
+.discord {
+    background: #404eed;
+}
+
+.youtube {
+    background: #bb0000;
+}
+
+.clicked {
+    opacity: 1;
+    transition: 1.2s all ease;
+    transform: translateX(4.6rem);
+}
+
+.unclicked {
+    opacity: 0;
+    transition: 1.2s all ease;
+    transform: translateX(-1.5rem);
+}
+
+.heartbeatSlow {
+    animation-name: heartbeatSlow;
+    animation-iteration-count: infinite;
+    animation-duration: .5s
+}
+
+@keyframes heartbeatSlow {
+    35%, 65% {
+        transform: scale(1.2)
+    }
+}

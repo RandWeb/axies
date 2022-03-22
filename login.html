@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="shortcut icon" href="assets/images/01_header/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/layout.css">
     <link rel="stylesheet" href="assets/css/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
@@ -23,12 +24,18 @@
                 <h1>sign in</h1>
                 <div class="form__wrapper">
                     <form action="#" method="post">
-                        <label for="email">email</label>
-                        <input id="email" type="email" placeholder="email address">
-                        <label for="password">password</label>
-                        <input id="password" type="password" placeholder="password">
 
-                        <div class="login__btn" onclick="this.classList.toggle('active')" >
+                        <div class="input">
+                            <label for="email">email</label>
+                            <input id="email" type="email" >
+                        </div>
+
+                        <div class="input">
+                            <label for="password">password</label>
+                            <input id="password" type="password" >
+                        </div>
+
+                        <div class="login__btn" onclick="this.classList.toggle('active')">
                             <span class="text">sign in</span>
                             <svg class="fingerprint fingerprint-base" xmlns="http://www.w3.org/2000/svg" width="100"
                                 height="100" viewBox="0 0 100 100">

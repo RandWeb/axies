@@ -220,7 +220,10 @@ a {
     margin: 0 auto;
     padding: 0;
 }
-
+.container > svg {
+    position: absolute;
+    top: -10rem;
+}
 @keyframes pulse {
     from {
       transform: scale(1);

@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="assets/css/popular.css">
     <link rel="stylesheet" href="assets/css/guideline.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/socials.css">
 </head>
 
 <body>
@@ -136,12 +137,8 @@
                             <i class="fa-solid fa-angle-down"></i>
                             <ul class="sub__menu-one">
                                 <li>
-                                    Page 1
+                                    <a href="login.html"> login </a>
                                 </li>
-                                <li>
-                                    Page 2
-                                </li>
-
                             </ul>
                         </div>
                         <div class="navbar__link">
@@ -1051,6 +1048,26 @@
                 </div>
             </div>
         </footer>
+        <div class="vertical__social">
+            <div class="button heartbeatSlow"><i class="fa-solid fa-share-nodes"></i></div>
+            <div class="socials">
+                <div class="social twitter"><i class="fa-brands fa-twitter"></i></div>
+                <div class="social facebook"><i class="fa-brands fa-facebook"></i></div>
+                <div class="social youtube"><i class="fa-brands fa-youtube"></i></div>
+                <div class="social discord"><i class="fa-brands fa-discord"></i></div>
+            </div>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                        result="goo" />
+                    <feBlend in="SourceGraphic" in2="goo" />
+                </filter>
+            </defs>
+        </svg>
     </div>
     <script src="assets/js/script.js"></script>
 </body>

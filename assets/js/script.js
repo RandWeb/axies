@@ -73,3 +73,24 @@ document.addEventListener('mouseup', function (e) {
         removeClassActiveSubmenu();
     }
 });
+
+
+//socials
+
+let shareBtn = document.querySelector(".button");
+
+shareBtn.addEventListener("click", () => {
+  shareBtn.classList.toggle('show');
+  if (document.querySelector(".social.twitter").classList.contains("clicked")) {
+    document.querySelector(".social.twitter").classList.toggle("unclicked");
+    document.querySelector(".social.facebook").classList.toggle("unclicked");
+    document.querySelector(".social.discord").classList.toggle("unclicked");
+    document.querySelector(".social.youtube").classList.toggle("unclicked");
+  } else {
+    document.querySelector(".social.twitter").classList.toggle("clicked");
+    document.querySelector(".social.facebook").classList.toggle("clicked");
+    document.querySelector(".social.discord").classList.toggle("clicked");
+    document.querySelector(".social.youtube").classList.toggle("clicked");
+  }
+});
+

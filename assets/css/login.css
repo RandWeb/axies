@@ -29,6 +29,7 @@
         transform: rotate(360deg);
     }
 }
+
 @keyframes rotateleft {
     0% {
         transform: rotate(0);
@@ -56,13 +57,19 @@
     z-index: 10;
 
 }
+
+.login__right > h1{
+    font-weight: 700;
+    font-size: 3.8rem;
+    letter-spacing: .1rem;
+}
+
 .login__right::before {
     content: "";
     width: calc(100% - 10rem);
     height: calc(100% - 40rem);
     position: absolute;
-    transform: rotate(50deg);
-    right: 40rem;
+    right: calc(100% / 2);
     top: 10rem;
     z-index: -5;
     background-color: inherit;
@@ -70,13 +77,13 @@
     opacity: .5;
     animation: rotateright 20s infinite;
 }
+
 .login__right::after {
     content: "";
     width: calc(100% - 40rem);
     height: calc(100% - 40rem);
     position: absolute;
-    transform: rotate(50deg);
-    right: 40rem;
+    right: calc(100% / 2);
     bottom: 10rem;
     z-index: -5;
     background-color: inherit;
@@ -84,6 +91,7 @@
     opacity: .5;
     animation: rotateleft 15s infinite;
 }
+
 .form__wrapper form {
     display: flex;
     flex-direction: column;
@@ -93,10 +101,34 @@
     height: 70%;
 }
 
-.form__wrapper form input {
+.input {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.input label {
+    position: absolute;
+    top: 1.4rem;
+    left: 1.5rem;
+    color: #161D30;
+}
+
+.input input {
     padding: 1.5rem 1rem;
     text-transform: capitalize;
     border-radius: .2rem;
+}
+
+.input input:focus {
+    color: #404eed;
+}
+
+.input-active {
+    top: -.2rem !important;
+    left: .5rem !important;
+    color: #32384E;
+    transition: all .3s ease-in-out;
 }
 
 input[type="submit"] {
@@ -114,8 +146,11 @@ input[type="submit"] {
     text-align: center;
     margin: 3rem auto;
 }
+
 .create__account a {
     padding-left: .5rem;
+    color: #404eed;
+    font-weight: 600;
 }
 
 .login__social {

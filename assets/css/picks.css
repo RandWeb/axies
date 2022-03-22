@@ -88,7 +88,7 @@
     display: flex;
     margin: 3rem 0;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: left;
 }
 
 .picks__middle-left {
@@ -112,7 +112,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding: 1rem 0;
-    justify-content: space-between;
+    justify-content: left;
     align-items: flex-start;
     overflow: hidden;
 }
