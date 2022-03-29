@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'nfts';
+    src: url('../fonts/nfts.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/nfts.eot') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/nfts.woff') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/nfts.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../fonts/nfts.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/nfts.svg') format('svg');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'brands';
+    src: url('../fonts/fa-brands-400﹖.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/fa-brands-400.eot') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/fa-brands-400.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/fa-brands-400.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../fonts/fa-brands-400.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/fa-brands-400.svg') format('svg');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'duotone';
+    src: url('../fonts/fa-duotone-900﹖.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/fa-duotone-900.eot') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/fa-duotone-900.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/fa-duotone-900.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../fonts/fa-duotone-900.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/fa-duotone-900.svg') format('svg');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'light';
+    src: url('../fonts/fa-light-300﹖.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/fa-light-300﹖.eot') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/fa-light-300.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/fa-light-300.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../fonts/fa-light-300.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/fa-light-300.svg') format('svg');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'regular';
+    src: url('../fonts/fa-regular-400﹖.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/fa-regular-400.eot') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/fa-regular-400.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/fa-regular-400.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../fonts/fa-regular-400.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/fa-regular-400.svg') format('svg');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'solid';
+    src: url("../fonts/fa-solid-900.eot");
+    /* IE9 Compat Modes */
+    src: url("../fonts/fa-solid-900.eot") format('embedded-opentype'),
+        /* IE6-IE8 */
+        url("../fonts/fa-solid-900.woff2") format('woff2'),
+        /* Super Modern Browsers */
+        url("../fonts/fa-solid-900.woff") format('woff'),
+        /* Pretty Modern Browsers */
+        url("../fonts/fa-solid-900.ttf") format('truetype'),
+        /* Safari, Android, iOS */
+        url("../fonts/fa-solid-900.svg") format('svg');
+    /* Legacy iOS */
+}
+@font-face {
+    font-family: 'Olivier';
+    src: url('../fonts/olivier\ Regular\ 400.ttf');
+}
+
+@font-face {
+    font-family: 'HVT';
+    src: url('../fonts/HelveticaNeue\ Thin.ttf');
+}
+
+@font-face {
+    font-family: 'HVT-bold';
+    src: url('../fonts/Helvetica-Bold-Font.ttf');
+}
+
