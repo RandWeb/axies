@@ -113,9 +113,12 @@ a {
     font-family: inherit;
     font-weight: normal;
     font-size: 1rem;
-    color: var(--light-color);
     outline: none;
     border: none;
+    border-radius: 20%;
+    font-size: 1.4rem;
+    letter-spacing: .1rem;
+    font-weight: 500;
 }
 
 .btn:hover {
@@ -132,14 +135,9 @@ a {
     transition: all 0.3s ease;
 }
 
-.btn__primary:hover {
-    color: var(--primary-color);
-    background-color: var(--light-color);
-}
-
 .btn__primary {
-    background-color: var(--color-primary);
-    color: var(--light-color);
+    color: var(--color-ordinary);
+    background-color: var(--light-color);
 }
 
 .btn__primary:hover {
@@ -154,7 +152,7 @@ a {
     padding: 0 1rem;
 }
 
-.container>svg {
+.container > svg {
     position: absolute;
     top: -10rem;
 }
