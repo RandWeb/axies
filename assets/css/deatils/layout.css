@@ -1,0 +1,7 @@
+body{
+    background-image: url(../../images/details/bg.jpg);
+    background-repeat: no-repeat;
+}
+#header{
+    background-image: inherit;
+}

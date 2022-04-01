@@ -1,8 +1,10 @@
 #live-auctions {
-    margin: 10rem auto;
+    margin-top: 15rem;
+    margin-bottom: 8rem;
 }
 
 #directory {
+    margin: 10rem auto;
     color: var(--color-text-primary);
     display: flex;
     flex-direction: column;
