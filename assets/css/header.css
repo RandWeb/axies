@@ -1,15 +1,14 @@
 #header {
-    width: 93vw;
+    width: 100vw;
     z-index: 99999;
+    margin:  0 auto;
     background-color: var(--color-primary);
     color: var(--color-text-primary);
     position: fixed;
     top: -10rem;
     border-bottom: .01rem solid #fefefe;
-    border-left: 0.1rem solid #fefefe;
-    border-right: 0.1rem solid #fefefe;
     font-family: 'Urbanist', sans-serif;
-    padding: .5rem;
+    padding:.5rem 2rem;
     font-size: 1.8rem;
     font-weight: 700;
     height: 7.8rem;
@@ -18,7 +17,7 @@
 
 .header__wrapper {
     display: flex;
-    width: 100%;
+    width: 96%;
     position: absolute;
     height: 101%;
     flex-direction: row;

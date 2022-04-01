@@ -1,0 +1,43 @@
+#live-auctions {
+    margin: 10rem auto;
+}
+
+#directory {
+    color: var(--color-text-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: capitalize;
+}
+.directory__title{
+    font-size: 4.8rem;
+    font-weight: 700;
+}
+.directory__path {
+    display: flex;
+    flex-direction: row;
+}
+
+.directory__path-item {
+    letter-spacing: .1rem;
+    padding: .2rem;
+    color: var(--light-gray-color);
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.directory__path-item:hover {
+    color: var(--color-text-seconadry);
+    transition: color .2s;
+}
+
+.directory__path-item:not(:last-child)::after {
+    content: "/";
+    color: var(--light-gray-color);
+    padding: 0 1rem;
+    cursor: default;
+}
+.directory__path-item:last-child{
+    cursor: text;
+    color: var(--color-text-primary);
+}

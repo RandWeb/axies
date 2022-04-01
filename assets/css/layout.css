@@ -149,7 +149,7 @@ a {
 .container {
     width: 100%;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 14rem;
 }
 
 .container > svg {
@@ -256,31 +256,31 @@ a {
 /* Container Media Query */
 @media only screen and (min-width: 576px) {
     .container {
-        max-width: 540px;
+        max-width: 54rem;
     }
 }
 
 @media only screen and (min-width: 768px) {
     .container {
-        max-width: 720px;
+        max-width: 72rem;
     }
 }
 
 @media only screen and (min-width: 992px) {
     .container {
-        max-width: 960px;
+        max-width: 96rem;
     }
 }
 
 @media only screen and (min-width: 1200px) {
     .container {
-        max-width: 1140px;
+        max-width: 114rem;
     }
 }
 
 @media only screen and (min-width: 1400px) {
     .container {
-        max-width: 1320px;
+        max-width: 132rem;
     }
 }
 
