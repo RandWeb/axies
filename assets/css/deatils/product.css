@@ -1,55 +1,235 @@
-#product{
+#product {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 15rem auto;
 }
 
-.product__left{
+.product__left {
     width: 100%;
     padding-right: 0rem;
 }
-.product__right{
+
+.product__right {
     padding-left: 5rem;
     width: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: start;
     color: var(--color-text-primary);
     text-transform: capitalize;
 }
-.product__left img{
+
+.product__left img {
     border-radius: 1rem;
     width: inherit;
 }
 
-.product__title{
+.product__title {
     font-size: 3.6rem;
     font-weight: 700;
+    margin-top: 1rem;
 }
-.product__action{
+
+.product__action {
+    display: flex;
+    flex-direction: row;
+    padding: 2.5rem 0;
+    justify-content: space-between;
+}
+
+.product__action-left {
     display: flex;
     flex-direction: row;
 }
-.product__action--left{
+
+.product__action-right {
     display: flex;
     flex-direction: row;
 }
-.product__action--right{
+
+.action-product {
+    padding: 1rem;
+    border-radius: 5rem;
+    margin: 0 .4rem;
+    background-color: var(--black-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.view {
+    font-family: 'nfts';
+    cursor: text;
+}
+
+.view::before {
+    content: '\e92a';
+    padding: 0 .5rem;
+}
+
+.like {
+    cursor: pointer;
+    font-family: 'nfts';
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+}
+
+.like:hover::before {
+    color: red;
+    transition: color .3s;
+}
+
+.like::before {
+    content: '\e90b';
+    padding-right: .5rem;
+}
+
+.share {
+    font-family: 'nfts';
+    background-color: var(--color-secondary);
+    position: relative;
+}
+
+.share::before {
+    content: "\e918";
+    position: relative;
+    top: .2rem;
+    left: -.1rem;
+}
+
+.more {
+    font-family: 'nfts';
+    background-color: var(--color-secondary);
+}
+
+.more::before {
+    content: '\e92c';
+    padding: -.1rem;
+}
+
+.more:hover, .share:hover {
+    color: var(--color-secondary);
+    background-color: var(--color-ordinary);
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.product__person {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
-.product__action--item .view{}
-.product__action--item .like{}
-.product__action--item .share{}
-.product__action--item .more{}
-.product__person-item{}
-.person__left{}
-.person__right{}
-.person__right h4{}
-.person__right h3{}
-.product__description{}
-.product__info{}
-.product__price{}
-.product__time{}
-.person__button{}
+
+.product__person-item {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color-secondary);
+    padding: 1rem;
+    padding-right: 10rem;
+    border-radius: var(--border-raduis-md);
+}
+
+.person__left {
+    border-radius: var(--border-raduis-md);
+    width: 5rem;
+}
+
+.person__left:hover {
+    transform: scale(1.3);
+    border-radius: var(--border-raduis-3xl);
+    transition: all .4s;
+}
+
+.person__right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    letter-spacing: .1rem;
+}
+
+.person__right span {
+    margin-top: .5rem;
+    font-size: 1.3rem;
+}
+
+.person__right h3 {
+    font-size: 1.5rem;
+    margin-top: .4rem;
+}
+
+.person__right h3:hover {
+    color: var(--color-ordinary);
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.product__description {
+    padding: 2rem 0;
+    letter-spacing: .1rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--color-text-onSecondary);
+}
+
+.product__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.product__info span {
+    padding-right: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.product-price {
+    background-color: var(--color-secondary);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.product-time {
+    background-color: var(--color-secondary);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+
+.product__button {
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1.5rem 2.5rem;
+    margin: 2rem auto;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text-Secondary);
+    box-shadow: inset 0 0 0 0.2rem var(--color-text-secondary);
+    -webkit-box-shadow: inset 0 0 0 0.2rem var(--color-text-secondary);
+    -ms-box-shadow: inset 0 0 0 0.2rem var(--color-text-secondary);
+    -o-box-shadow: inset 0 0 0 0.2rem var(--color-text-secondary);
+    transition: all 0.3s ease;
+    background-color: var(--color-primary);
+}
+
+.product__button:hover {
+    color: var(--color-ordinary);
+    background-color: var(--color-text-primary);
+    transition: all .3s;
+}
+
+.product__button::before {
+    content: "\e901";
+    font-family: 'nfts';
+    padding-right: 1rem;
+}
