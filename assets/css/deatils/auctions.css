@@ -23,10 +23,12 @@
 .directory__path-item {
     letter-spacing: .1rem;
     padding: .2rem;
-    color: var(--light-gray-color);
     cursor: pointer;
     font-size: 1.8rem;
     font-weight: 400;
+}
+.directory__path-item a{
+    color: var(--light-gray-color);
 }
 .directory__path-item:hover {
     color: var(--color-text-seconadry);
@@ -39,7 +41,7 @@
     padding: 0 1rem;
     cursor: default;
 }
-.directory__path-item:last-child{
+.directory__path-item:last-child a{
     cursor: text;
     color: var(--color-text-primary);
 }

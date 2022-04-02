@@ -74,6 +74,10 @@
     padding-top: .5rem;
     font-size: 1.5rem;
 }
+.navbar__link i.rotate {
+    transform: rotate(180deg);
+    transition: transform .3s ;
+}
 
 .search__icon {
     display: flex;
