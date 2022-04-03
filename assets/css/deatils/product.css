@@ -1,3 +1,16 @@
+@keyframes circleEffect {
+	0% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	100% {
+		width: 200%;
+		height: 200%;
+		opacity: 0;
+	}
+}
 #product {
     display: flex;
     flex-direction: row;
@@ -8,11 +21,43 @@
 .product__left {
     width: 100%;
     padding-right: 0rem;
+    padding-left: 10rem;
 }
+
+
+/* Shine */
+
+.example > .block::before {
+	position: absolute;
+	top: -1.8rem;
+	left: 4.5rem;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 3rem;
+	height: 12rem;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	transform: skewY(-15deg) rotate(95deg);
+}
+.example > .block:nth-child(2):before {
+	top: -2rem;
+	left: 10.8rem;
+	width: 2rem;
+	height: 23rem;
+}
+.example > .block:hover::before {
+	animation: shine .75s;
+}
+@keyframes shine {
+	100% {
+		top: 80%;
+	}
+}
+
 .example {
     position: relative;
-    width: 120%;
-    padding-top: 50%;
+    width: 100%;
     height: 100%;
     padding-top: 1rem;
     margin: 2rem auto;
@@ -20,24 +65,24 @@
   .example > .block {
     position: absolute;
     height: 100%;
-    width: 30%;
-    perspective: 1000px;
+    width: 40%;
+    perspective: 100rem;
   }
   .example > .block:nth-of-type(1) {
     height: 80%;
     top: 10%;
-    left: 17%;
-    width: 15%;
+    left: 6%;
+    width: 20%;
   }
   .example > .block:nth-of-type(2) {
     top: 0;
-    left: 35%;
+    left: 31%;
   }
   .example > .block:nth-of-type(3) {
     height: 80%;
     top: 10%;
-    left: 64%;
-    width: 15%;
+    right: 10%;
+    width: 20%;
   }
   .example > .block > .side {
     position: absolute;
@@ -206,8 +251,26 @@
 .person__left {
     border-radius: var(--border-raduis-md);
     width: 5rem;
+    position: relative;
 }
-
+.person__left::before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 50;
+	display: block;
+	content: '';
+	width: 2rem;
+	height: 2rem;
+	background: rgba(255,255,255,.2);
+	border-radius: 100%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	 opacity: 0; 
+}
+.person__left:hover:before{
+    animation: circleEffect .3s;
+}
 .person__left:hover {
     transform: scale(1.3);
     border-radius: var(--border-raduis-3xl);
