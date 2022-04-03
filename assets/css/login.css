@@ -1,409 +1,410 @@
 .login__wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
 
 }
 
 .login__left {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 60vw;
-    background-color: #161D30;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60vw;
+  background-color: #161D30;
 }
 
 .login__left img {
-    width: 90%;
+  width: 90%;
 }
 
 @keyframes rotateright {
-    0% {
-        transform: rotate(0);
-    }
+  0% {
+    transform: rotate(0);
+  }
 
-    100% {
-        transform: rotate(360deg);
-    }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes rotateleft {
-    0% {
-        transform: rotate(0);
-    }
+  0% {
+    transform: rotate(0);
+  }
 
-    100% {
-        transform: rotate(-360deg);
-    }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 
 
 .login__right {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 40vw;
-    right: 0;
-    padding: 0 1rem;
-    text-transform: capitalize;
-    background-color: #292F45;
-    color: #E5EBF7;
-    z-index: 10;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 40vw;
+  right: 0;
+  padding: 0 1rem;
+  text-transform: capitalize;
+  background-color: #292F45;
+  color: #E5EBF7;
+  z-index: 10;
 
 }
 
-.login__right > h1{
-    font-weight: 700;
-    font-size: 3.8rem;
-    letter-spacing: .1rem;
+.login__right>h1 {
+  font-weight: 700;
+  font-size: 3.8rem;
+  letter-spacing: .1rem;
 }
 
 .login__right::before {
-    content: "";
-    width: calc(100% - 10rem);
-    height: calc(100% - 40rem);
-    position: absolute;
-    right: calc(100% / 2);
-    top: 10rem;
-    z-index: -5;
-    background-color: inherit;
-    border-radius: 40%;
-    opacity: .5;
-    animation: rotateright 20s infinite;
+  content: "";
+  width: calc(100% - 10rem);
+  height: calc(100% - 40rem);
+  position: absolute;
+  right: calc(100% / 2);
+  top: 10rem;
+  z-index: -5;
+  background-color: inherit;
+  border-radius: 40%;
+  opacity: .5;
+  animation: rotateright 20s infinite;
 }
 
 .login__right::after {
-    content: "";
-    width: calc(100% - 40rem);
-    height: calc(100% - 40rem);
-    position: absolute;
-    right: calc(100% / 2);
-    bottom: 10rem;
-    z-index: -5;
-    background-color: inherit;
-    border-radius: 40%;
-    opacity: .5;
-    animation: rotateleft 15s infinite;
+  content: "";
+  width: calc(100% - 40rem);
+  height: calc(100% - 40rem);
+  position: absolute;
+  right: calc(100% / 2);
+  bottom: 10rem;
+  z-index: -5;
+  background-color: inherit;
+  border-radius: 40%;
+  opacity: .5;
+  animation: rotateleft 15s infinite;
 }
 
 .form__wrapper form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin: 4rem 0;
-    width: 100%;
-    height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 4rem 0;
+  width: 100%;
+  height: 70%;
 }
 
 .input {
-    display: flex;
-    flex-direction: column;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .input label {
-    position: absolute;
-    top: 1.4rem;
-    left: 1.5rem;
-    color: #161D30;
+  position: absolute;
+  top: 1.4rem;
+  left: 1.5rem;
+  color: #161D30;
 }
 
 .input input {
-    padding: 1.5rem 1rem;
-    text-transform: capitalize;
-    border-radius: .2rem;
+  padding: 1.5rem 1rem;
+  text-transform: capitalize;
+  border-radius: .2rem;
 }
 
 .input input:focus {
-    color: #404eed;
+  color: #404eed;
 }
 
 .input-active {
-    top: -.2rem !important;
-    left: .5rem !important;
-    color: #32384E;
-    transition: all .3s ease-in-out;
+  top: -.2rem !important;
+  left: .5rem !important;
+  color: #32384E;
+  transition: all .3s ease-in-out;
 }
 
 input[type="submit"] {
-    background-color: #7367EF;
-    color: inherit;
+  background-color: #7367EF;
+  color: inherit;
 }
 
 .create__account {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    font-size: 1.4rem;
-    letter-spacing: .1rem;
-    text-align: center;
-    margin: 3rem auto;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 1.4rem;
+  letter-spacing: .1rem;
+  text-align: center;
+  margin: 3rem auto;
 }
 
 .create__account a {
-    padding-left: .5rem;
-    color: #404eed;
-    font-weight: 600;
+  padding-left: .5rem;
+  color: #404eed;
+  font-weight: 600;
 }
 
 .login__social {
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border-top: .2rem solid #32384E;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-top: .2rem solid #32384E;
 }
 
 .login__social::before {
-    content: 'or';
-    z-index: 9999;
-    text-transform: lowercase;
-    color: white;
-    background-color: #292F45;
-    position: absolute;
-    padding: 0 .5rem;
-    text-align: center;
-    top: -1rem;
+  content: 'or';
+  z-index: 9999;
+  text-transform: lowercase;
+  color: white;
+  background-color: #292F45;
+  position: absolute;
+  padding: 0 .5rem;
+  text-align: center;
+  top: -1rem;
 }
 
 .social__link {
-    margin: 2rem .5rem;
-    cursor: pointer;
-    color: white;
-    border-radius: 30%;
-    padding: 1rem;
-    font-size: 2rem;
-    transition: animation .3s;
+  margin: 2rem .5rem;
+  cursor: pointer;
+  color: white;
+  border-radius: 30%;
+  padding: 1rem;
+  font-size: 2rem;
+  transition: animation .3s;
 }
 
 .social__link:hover i {
-    animation: pulse 3s infinite;
+  animation: pulse 3s infinite;
 }
 
 .twitter {
-    background: #00aced;
+  background: #00aced;
 }
 
 .facebook {
-    background: #3b5998;
+  background: #3b5998;
 }
 
 .discord {
-    background: #404eed;
+  background: #404eed;
 }
 
 .youtube {
-    background: #bb0000;
+  background: #bb0000;
 }
 
 
 .login__btn {
-    align-items: center;
-    width: 100%;
-    background: #7367EF;
-    border-radius: .2rem;
-    box-shadow: 0 1.4rem 2.8rem rgba(0, 0, 0, 0.25), 0 1rem 1rem rgba(0, 0, 0, 0.22);
-    display: flex;
-    justify-content: center;
-    height: 4.5rem;
-    position: relative;
-    margin: 0 auto;
-    cursor: pointer;
+  align-items: center;
+  width: 100%;
+  background: #7367EF;
+  border-radius: .2rem;
+  box-shadow: 0 1.4rem 2.8rem rgba(0, 0, 0, 0.25), 0 1rem 1rem rgba(0, 0, 0, 0.22);
+  display: flex;
+  justify-content: center;
+  height: 4.5rem;
+  position: relative;
+  margin: 0 auto;
+  cursor: pointer;
 }
 
 .text {
-    color: white;
-    position: absolute;
-    transition: opacity 300ms;
-    user-select: none;
-    -moz-user-select: none;
+  color: white;
+  position: absolute;
+  transition: opacity 300ms;
+  user-select: none;
+  -moz-user-select: none;
 }
 
 .fingerprint {
-    height: 6.5rem;
-    left: -2.3rem;
-    opacity: 0;
-    position: absolute;
-    stroke: #777;
-    top: -.9rem;
-    transition: opacity 1ms;
+  height: 6.5rem;
+  left: -2.3rem;
+  opacity: 0;
+  position: absolute;
+  stroke: #777;
+  top: -.9rem;
+  transition: opacity 1ms;
 }
 
 .fingerprint-active {
-    stroke: #fff;
+  stroke: #fff;
 }
 
 .fingerprint-out {
-    opacity: 1;
+  opacity: 1;
 }
 
 .odd {
-    stroke-dasharray: 0px 5rem;
-    stroke-dashoffset: .1rem;
-    transition: stroke-dasharray 1ms;
+  stroke-dasharray: 0px 5rem;
+  stroke-dashoffset: .1rem;
+  transition: stroke-dasharray 1ms;
 }
 
 .even {
-    stroke-dasharray: 5rem 5rem;
-    stroke-dashoffset: -4.1rem;
-    transition: stroke-dashoffset 1ms;
+  stroke-dasharray: 5rem 5rem;
+  stroke-dashoffset: -4.1rem;
+  transition: stroke-dashoffset 1ms;
 }
 
 .ok {
-    opacity: 0;
+  opacity: 0;
 }
 
 .active.login__btn {
-    animation: 6s loginBtn;
+  animation: 6s loginBtn;
 }
 
 .active .text {
-    opacity: 0;
-    animation: 6s Text forwards;
+  opacity: 0;
+  animation: 6s Text forwards;
 }
 
 .active .fingerprint {
-    opacity: 1;
-    transition: opacity 300ms 200ms;
+  opacity: 1;
+  transition: opacity 300ms 200ms;
 }
 
 .active .fingerprint-base .odd {
-    stroke-dasharray: 5rem 5rem;
-    transition: stroke-dasharray 800ms 100ms;
+  stroke-dasharray: 5rem 5rem;
+  transition: stroke-dasharray 800ms 100ms;
 }
 
 .active .fingerprint-base .even {
-    stroke-dashoffset: 0px;
-    transition: stroke-dashoffset 800ms;
+  stroke-dashoffset: 0px;
+  transition: stroke-dashoffset 800ms;
 }
 
 .active .fingerprint-active .odd {
-    stroke-dasharray: 5rem 5rem;
-    transition: stroke-dasharray 2000ms 1500ms;
+  stroke-dasharray: 5rem 5rem;
+  transition: stroke-dasharray 2000ms 1500ms;
 }
 
 .active .fingerprint-active .even {
-    stroke-dashoffset: 0;
-    transition: stroke-dashoffset 2000ms 1300ms;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 2000ms 1300ms;
 }
 
 .active .fingerprint-out {
-    opacity: 0;
-    transition: opacity 300ms 4100ms;
+  opacity: 0;
+  transition: opacity 300ms 4100ms;
 }
 
 .active .ok {
-    opacity: 1;
-    animation: 6s Ok forwards;
+  opacity: 1;
+  animation: 6s Ok forwards;
 }
 
 @keyframes loginBtn {
-    0% {
-        width: 15rem;
-        border-radius: 100%;
-    }
+  0% {
+    width: 15rem;
+    border-radius: 100%;
+  }
 
-    6% {
-        width: 5rem;
-    }
+  6% {
+    width: 5rem;
+  }
 
-    71% {
-        transform: scale(1);
-        border-radius: 100%
-    }
+  71% {
+    transform: scale(1);
+    border-radius: 100%
+  }
 
-    75% {
-        transform: scale(1.2);
-        border-radius: 100%
-    }
+  75% {
+    transform: scale(1.2);
+    border-radius: 100%
+  }
 
-    77% {
-        transform: scale(1);
-        border-radius: 80%
-    }
+  77% {
+    transform: scale(1);
+    border-radius: 80%
+  }
 
-    94% {
-        width: 5rem;
-        border-radius: 40%
-    }
+  94% {
+    width: 5rem;
+    border-radius: 40%
+  }
 
-    100% {
-        width: 15rem;
-        border-radius: .2rem
-    }
+  100% {
+    width: 15rem;
+    border-radius: .2rem
+  }
 }
 
 @keyframes Text {
-    0% {
-        opacity: 1;
-        transform: scale(1);
-    }
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
 
-    6% {
-        opacity: 0;
-        transform: scale(0.5);
-    }
+  6% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
 
-    94% {
-        opacity: 0;
-        transform: scale(0.5);
-    }
+  94% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
 
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 @keyframes Ok {
-    0% {
-        opacity: 0
-    }
+  0% {
+    opacity: 0
+  }
 
-    70% {
-        opacity: 0;
-        transform: scale(0);
-    }
+  70% {
+    opacity: 0;
+    transform: scale(0);
+  }
 
-    75% {
-        opacity: 1;
-        transform: scale(1.1);
-    }
+  75% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
 
-    77% {
-        opacity: 1;
-        transform: scale(1);
-    }
+  77% {
+    opacity: 1;
+    transform: scale(1);
+  }
 
-    92% {
-        opacity: 1;
-        transform: scale(1);
-    }
+  92% {
+    opacity: 1;
+    transform: scale(1);
+  }
 
-    96% {
-        opacity: 0;
-        transform: scale(0.5);
-    }
+  96% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
 
-    100% {
-        opacity: 0
-    }
+  100% {
+    opacity: 0
+  }
 }
 
 /*backhome*/
-.backhome{
-    position: absolute;
-    bottom: 1rem;
-    left: 1rem;
+.backhome {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
 }
+
 svg {
   position: absolute;
   top: -4000px;
@@ -414,14 +415,19 @@ svg {
   padding: 1rem;
   font-size: 2rem;
   border: none;
-  color: var(--color-text-primary);
+  text-transform: capitalize;
+  color: var(--color-text-secondary);
+  font-weight: 700;
+  font-size: 1.8rem;
   filter: url("#gooey");
   position: relative;
   background-color: #7367EF;
 }
+
 #gooey-button:focus {
   outline: none;
 }
+
 #gooey-button .bubbles {
   position: absolute;
   top: 0;
@@ -429,6 +435,7 @@ svg {
   bottom: 0;
   right: 0;
 }
+
 #gooey-button .bubbles .bubble {
   background-color: #7367EF;
   border-radius: 100%;
@@ -438,104 +445,164 @@ svg {
   display: block;
   z-index: -1;
 }
+
 #gooey-button .bubbles .bubble:nth-child(1) {
   left: 78px;
   width: 25px;
   height: 25px;
   -webkit-animation: move-1 3.02s infinite;
-          animation: move-1 3.02s infinite;
+  animation: move-1 3.02s infinite;
   -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
+
 #gooey-button .bubbles .bubble:nth-child(2) {
   left: 49px;
   width: 25px;
   height: 25px;
   -webkit-animation: move-2 3.04s infinite;
-          animation: move-2 3.04s infinite;
+  animation: move-2 3.04s infinite;
   -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
+
 #gooey-button .bubbles .bubble:nth-child(3) {
   left: 100px;
   width: 25px;
   height: 25px;
   -webkit-animation: move-3 3.06s infinite;
-          animation: move-3 3.06s infinite;
+  animation: move-3 3.06s infinite;
   -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  animation-delay: 0.6s;
 }
+
 #gooey-button .bubbles .bubble:nth-child(4) {
   left: 59px;
   width: 25px;
   height: 25px;
   -webkit-animation: move-4 3.08s infinite;
-          animation: move-4 3.08s infinite;
+  animation: move-4 3.08s infinite;
   -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
+  animation-delay: 0.8s;
 }
+
 #gooey-button .bubbles .bubble:nth-child(5) {
   left: 34px;
   width: 25px;
   height: 25px;
   -webkit-animation: move-5 3.1s infinite;
-          animation: move-5 3.1s infinite;
+  animation: move-5 3.1s infinite;
   -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  animation-delay: 1s;
 }
+
 #gooey-button .bubbles .bubble:nth-child(6) {
   left: 67px;
   width: 25px;
   height: 25px;
   -webkit-animation: move-6 3.12s infinite;
-          animation: move-6 3.12s infinite;
+  animation: move-6 3.12s infinite;
   -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
+  animation-delay: 1.2s;
 }
+
 #gooey-button .bubbles .bubble:nth-child(7) {
   left: 65px;
   width: 25px;
   height: 25px;
   -webkit-animation: move-7 3.14s infinite;
-          animation: move-7 3.14s infinite;
+  animation: move-7 3.14s infinite;
   -webkit-animation-delay: 1.4s;
-          animation-delay: 1.4s;
+  animation-delay: 1.4s;
 }
+
 #gooey-button .bubbles .bubble:nth-child(8) {
   left: 13px;
   width: 25px;
   height: 25px;
   -webkit-animation: move-8 3.16s infinite;
-          animation: move-8 3.16s infinite;
+  animation: move-8 3.16s infinite;
   -webkit-animation-delay: 1.6s;
-          animation-delay: 1.6s;
+  animation-delay: 1.6s;
 }
+
 #gooey-button .bubbles .bubble:nth-child(9) {
   left: 17px;
   width: 25px;
   height: 25px;
   -webkit-animation: move-9 3.18s infinite;
-          animation: move-9 3.18s infinite;
+  animation: move-9 3.18s infinite;
   -webkit-animation-delay: 1.8s;
-          animation-delay: 1.8s;
+  animation-delay: 1.8s;
 }
+
 #gooey-button .bubbles .bubble:nth-child(10) {
   left: 44px;
   width: 25px;
   height: 25px;
   -webkit-animation: move-10 3.2s infinite;
-          animation: move-10 3.2s infinite;
+  animation: move-10 3.2s infinite;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+#gooey-button .bubbles .bubble:nth-child(11) {
+  left: 15rem;
+  width: 5rem;
+  height: 2.4rem;
+  -webkit-animation: move-1 3.2s infinite;
+  animation: move-10 3.2s infinite;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+#gooey-button .bubbles .bubble:nth-child(12) {
+  left: 14rem;
+  width: 5rem;
+  height: 2.4rem;
+  -webkit-animation: move-6 3.2s infinite;
+  animation: move-10 3.2s infinite;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+#gooey-button .bubbles .bubble:nth-child(13) {
+  left: 13.2rem;
+  width: 5rem;
+  height: 2.4rem;
+  -webkit-animation: move-3 3.2s infinite;
+  animation: move-10 3.2s infinite;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+/* }
+#gooey-button .bubbles .bubble:nth-child(12) {
+  left: 5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  -webkit-animation: move-8 3.2s infinite;
+          animation: move-8 3.2s infinite;
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
+#gooey-button .bubbles .bubble:nth-child(13) {
+  left: 5.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  -webkit-animation: move-1 3.2s infinite;
+          animation: move-1 3.2s infinite;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+} */
 
 @-webkit-keyframes move-1 {
   0% {
     transform: translate(0, 0);
   }
+
   99% {
     transform: translate(0, -99px);
   }
+
   100% {
     transform: translate(0, 0);
     opacity: 0;
@@ -546,225 +613,281 @@ svg {
   0% {
     transform: translate(0, 0);
   }
+
   99% {
     transform: translate(0, -99px);
   }
+
   100% {
     transform: translate(0, 0);
     opacity: 0;
   }
 }
+
 @-webkit-keyframes move-2 {
   0% {
     transform: translate(0, 0);
   }
+
   99% {
     transform: translate(0, -104px);
   }
+
   100% {
     transform: translate(0, 0);
     opacity: 0;
   }
 }
+
 @keyframes move-2 {
   0% {
     transform: translate(0, 0);
   }
+
   99% {
     transform: translate(0, -104px);
   }
+
   100% {
     transform: translate(0, 0);
     opacity: 0;
   }
 }
+
 @-webkit-keyframes move-3 {
   0% {
     transform: translate(0, 0);
   }
+
   99% {
     transform: translate(0, -116px);
   }
+
   100% {
     transform: translate(0, 0);
     opacity: 0;
   }
 }
+
 @keyframes move-3 {
   0% {
     transform: translate(0, 0);
   }
+
   99% {
     transform: translate(0, -116px);
   }
+
   100% {
     transform: translate(0, 0);
     opacity: 0;
   }
 }
+
 @-webkit-keyframes move-4 {
   0% {
     transform: translate(0, 0);
   }
+
   99% {
     transform: translate(0, -90px);
   }
+
   100% {
     transform: translate(0, 0);
     opacity: 0;
   }
 }
+
 @keyframes move-4 {
   0% {
     transform: translate(0, 0);
   }
+
   99% {
     transform: translate(0, -90px);
   }
+
   100% {
     transform: translate(0, 0);
     opacity: 0;
   }
 }
+
 @-webkit-keyframes move-5 {
   0% {
     transform: translate(0, 0);
   }
+
   99% {
     transform: translate(0, -128px);
   }
+
   100% {
     transform: translate(0, 0);
     opacity: 0;
   }
 }
+
 @keyframes move-5 {
   0% {
     transform: translate(0, 0);
   }
+
   99% {
     transform: translate(0, -128px);
   }
+
   100% {
     transform: translate(0, 0);
     opacity: 0;
   }
 }
+
 @-webkit-keyframes move-6 {
   0% {
     transform: translate(0, 0);
   }
+
   99% {
     transform: translate(0, -54px);
   }
+
   100% {
     transform: translate(0, 0);
     opacity: 0;
   }
 }
+
 @keyframes move-6 {
   0% {
     transform: translate(0, 0);
   }
+
   99% {
     transform: translate(0, -54px);
   }
+
   100% {
     transform: translate(0, 0);
     opacity: 0;
   }
 }
+
 @-webkit-keyframes move-7 {
   0% {
     transform: translate(0, 0);
   }
+
   99% {
     transform: translate(0, -54px);
   }
+
   100% {
     transform: translate(0, 0);
     opacity: 0;
   }
 }
+
 @keyframes move-7 {
   0% {
     transform: translate(0, 0);
   }
+
   99% {
     transform: translate(0, -54px);
   }
+
   100% {
     transform: translate(0, 0);
     opacity: 0;
   }
 }
+
 @-webkit-keyframes move-8 {
   0% {
     transform: translate(0, 0);
   }
+
   99% {
     transform: translate(0, -66px);
   }
+
   100% {
     transform: translate(0, 0);
     opacity: 0;
   }
 }
+
 @keyframes move-8 {
   0% {
     transform: translate(0, 0);
   }
+
   99% {
     transform: translate(0, -66px);
   }
+
   100% {
     transform: translate(0, 0);
     opacity: 0;
   }
 }
+
 @-webkit-keyframes move-9 {
   0% {
     transform: translate(0, 0);
   }
+
   99% {
     transform: translate(0, -111px);
   }
+
   100% {
     transform: translate(0, 0);
     opacity: 0;
   }
 }
+
 @keyframes move-9 {
   0% {
     transform: translate(0, 0);
   }
+
   99% {
     transform: translate(0, -111px);
   }
+
   100% {
     transform: translate(0, 0);
     opacity: 0;
   }
 }
+
 @-webkit-keyframes move-10 {
   0% {
     transform: translate(0, 0);
   }
+
   99% {
     transform: translate(0, -65px);
   }
+
   100% {
     transform: translate(0, 0);
     opacity: 0;
   }
 }
+
 @keyframes move-10 {
   0% {
     transform: translate(0, 0);
   }
+
   99% {
     transform: translate(0, -65px);
   }
+
   100% {
     transform: translate(0, 0);
     opacity: 0;
