@@ -125,3 +125,25 @@ function RemoveActiveTabClass() {
     })
 }
 
+/** scroll to top */
+var scrollToTopBtn = document.querySelector(".scroll__btn");
+var rootElement = document.documentElement;
+
+function handleScroll() {
+  var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
+  if (rootElement.scrollTop / scrollTotal > 0.01) {
+    scrollToTopBtn.classList.add("scroll__btn-show");
+  } else {
+    scrollToTopBtn.classList.remove("scroll__btn-show");
+  }
+}
+
+function scrollToTop() {
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+scrollToTopBtn.addEventListener("click", scrollToTop);
+document.addEventListener("scroll", handleScroll);
+
