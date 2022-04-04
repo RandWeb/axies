@@ -150,10 +150,10 @@ a {
 .container {
     width: 100%;
     margin: 0 auto;
-    padding: 0 14rem;
+    padding: 0 1rem;
 }
 
-.container>svg {
+.container >svg {
     position: absolute;
     top: -10rem;
 }
@@ -254,43 +254,6 @@ a {
     padding-left: 4rem;
 }
 
-/* Container Media Query */
-@media only screen and (min-width: 576px) {
-    .container {
-        max-width: 54rem;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .container {
-        max-width: 72rem;
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    .container {
-        max-width: 96rem;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .container {
-        max-width: 114rem;
-    }
-}
-
-@media only screen and (min-width: 1400px) {
-    .container {
-        max-width: 132rem;
-    }
-}
-
-@media only screen and (min-width: 1700px) {
-    .container {
-        max-width: 180rem;
-    }
-}
-
 ::-webkit-scrollbar {
     width: .8rem;
     border-radius: 100vw;
@@ -308,19 +271,22 @@ a {
     border: .2rem solid var(--color-accent);
 
 }
-::-webkit-scrollbar-thumb:hover{
+
+::-webkit-scrollbar-thumb:hover {
     cursor: pointer;
     background-color: var(--gray-color);
 }
 
-.scroll__btn i{
+.scroll__btn i {
     font-family: 'solid';
     font-size: 2rem;
 }
-.scroll__btn i::after{
+
+.scroll__btn i::after {
     content: "\f325";
 }
-.scroll__btn{
+
+.scroll__btn {
     position: fixed;
     width: 5rem;
     height: 5rem;
@@ -336,8 +302,9 @@ a {
     outline: none;
     border: 0;
     overflow: hidden;
-  }
-  .scroll__btn::before {
+}
+
+.scroll__btn::before {
     position: absolute;
     content: "";
     width: 100%;
@@ -350,18 +317,19 @@ a {
     border: 0.2rem solid var(--color-secondary);
     opacity: 0.4;
     animation: shine 1s infinite 2s;
-  }
-  @keyframes shine {
+}
+
+@keyframes shine {
     0% {
-      transform: scale(0);
+        transform: scale(0);
     }
+
     100% {
-      transform: scale(1);
+        transform: scale(1);
     }
-  }
-  
-  .scroll__btn-show {
+}
+
+.scroll__btn-show {
     opacity: 1;
     transform: translateY(0rem);
-  }
-  
+}

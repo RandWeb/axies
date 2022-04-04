@@ -1,44 +1,45 @@
 #hero {
     width: 100%;
-    margin-top: 15rem;
+    margin-top: 4rem;
 }
 
 .hero__wrapper {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     position: relative;
     margin-top: 3rem;
     height: 100%;
-    font-family: 'Urbanist', sans-serif;
+    width: 100%;
 }
 
 .slider__right {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     flex-direction: row;
-    width: 50%;
     position: relative;
-    right: 2rem;
-    top: 3.5rem;
-    text-align: center;
 }
-
-.slider__right img {
+.wrapper__images{
     position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 40vw;
+    margin-right: 3rem;
+    height: inherit;
+    background: url(../images/02_hero/img-bg-sliderhome2.png) no-repeat center;
+    background-size: 100%;
+}
+.slider__right img {
     animation: moveSlider 10s infinite linear;
     z-index: 50;
 }
 
-.hero__bg {
-    width: 55rem;
-    top: 5rem;
-}
-
 .slider__left {
-    width: 50%;
     display: flex;
     flex-direction: column;
     margin-top: 5rem;
+    padding-left: 10rem;
 }
 
 .slider__left-top {
@@ -48,7 +49,8 @@
     justify-content: center;
     text-transform: capitalize;
 }
-.slider__title{
+
+.slider__title {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -56,7 +58,8 @@
     font-size: 5.8rem;
     font-weight: 700;
 }
-.slider__title h1{
+
+.slider__title h1 {
     color: #14141f;
     background: linear-gradient(-45deg, #E250E5, #4B50E6, #E250E5, #4B50E6);
     background-size: 100% 100%;
@@ -64,12 +67,14 @@
     -webkit-text-stroke: 3px transparent;
 }
 
-.slider__title h2{
+.slider__title h2 {
     color: var(--color-text-primary);
 }
-.slider__title h3{
+
+.slider__title h3 {
     color: var(--color-text-primary);
 }
+
 .slider__description {
     width: 100%;
     letter-spacing: .1rem;
@@ -90,7 +95,8 @@
     font-size: 1.5rem;
     font-weight: 700;
 }
-.btn-explore{
+
+.btn-explore {
     height: 6rem;
     display: flex;
     justify-content: space-around;
@@ -98,42 +104,48 @@
     flex-direction: row;
     margin-right: 1.4rem;
 }
+
 .btn-explore:hover {
     background-color: var(--color-ordinary);
     color: var(--light-color);
     box-shadow: inset 0 0 0 .2rem var(--color-ordinary);
 }
 
- .btn-explore p{
-     padding-right: 1rem;
- }
+.btn-explore p {
+    padding-right: 1rem;
+}
 
- .btn-explore i{
-     margin-right: 2rem;
- }
-.btn-create{
+.btn-explore i {
+    margin-right: 2rem;
+}
+
+.btn-create {
     height: 6rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
 }
+
 .btn-create:hover {
     background-color: var(--color-ordinary);
     color: var(--light-color);
     box-shadow: inset 0 0 0 .2rem var(--color-ordinary);
 }
 
- .btn-create p{
-     padding-right: 1rem;
- }
+.btn-create p {
+    padding-right: 1rem;
+}
 
- .btn-create i{
-     margin-right: 2rem;
- }
- .bg-circle{
-     position: relative;
- }
+.btn-create i {
+    margin-right: 2rem;
+}
+
+.bg-circle {
+    position: relative;
+    width: 100%;
+}
+
 .shape {
     background: linear-gradient(216.56deg, #E250E5 5.32%, #4B50E6 94.32%);
     border-radius: 50%;
@@ -144,8 +156,8 @@
 .circle__shape-16 {
     width: 1.6rem;
     height: 1.6rem;
-    right: 62rem;
-    top: 6rem;
+    right: 145rem;
+    bottom: 8rem;
     animation: circle_xr 10s infinite linear;
 }
 
@@ -153,58 +165,58 @@
 .circle__shape-22 {
     width: 2.2rem;
     height: 2.2rem;
-    left: 62rem;
-    top: 45rem;
+    right: 80rem;
+    bottom: 20rem;
     animation: circle_xr 10s infinite linear;
 }
 
 .circle__shape-32 {
     width: 3.2rem;
     height: 3.2rem;
-    top: 40rem;
-    right: 20rem;
+    top: 4rem;
+    right: 80rem;
     animation: circle_xr 10s infinite linear;
 }
 
 .circle__shape-48 {
     width: 4.8rem;
     height: 4.8rem;
-    top: 40rem;
-    right: 60rem;
+    top: 5rem;
+    right:50rem;
     animation: circle_x 10s infinite linear;
 }
 
 .circle__shape-51 {
     width: 5.1rem;
     height: 5.1rem;
-    top: 2rem;
-    right: 31rem;
+    bottom: 2rem;
+    right: 15rem;
     animation: circle_empty 10s infinite linear;
 }
 
 .circle__shape-52 {
     width: 5.2rem;
     height: 5.2rem;
-    top: 10rem;
-    left: 85rem;
+    top: 20rem;
+    right: 90rem;
     animation: circle_empty 10s infinite linear;
 }
 
 .circle__shape-52::after, .circle__shape-51::after {
     content: '';
-    width: 47px;
-    height: 47px;
-    background: #14141F;
+    width: 4.7rem;
+    height: 4.7rem;
+    background: var(--color-primary);
     border-radius: 50%;
     position: absolute;
-    top: 2px;
-    left: 2px;
+    top: .2rem;
+    left: .2rem;
 }
 
 .circle__shape-68 {
     width: 6.8rem;
     height: 6.8rem;
-    right: 18rem;
-    top: 12rem;
+    right: 4rem;
+    top: 4.2rem;
     animation: circle_x 10s infinite linear;
 }
