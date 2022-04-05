@@ -150,12 +150,9 @@ document.addEventListener("scroll", handleScroll);
 
 /** loader */
 let preloader = document.querySelector(".preloader");
-let header = document.querySelector('header');
-header.style.display = 'none';
+let header = document.getElementById('header');
 let main = document.querySelector('.container');
-main.style.display = 'none';
-let footer = document.querySelector('footer');
-footer.style.display = 'none';
+let footer = document.getElementById('footer');
 window.addEventListener('load', function () {
     preloader.style.display = 'none';
     header.style.display = 'flex';
