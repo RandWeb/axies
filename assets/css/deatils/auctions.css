@@ -30,8 +30,8 @@
 .directory__path-item a{
     color: var(--light-gray-color);
 }
-.directory__path-item:hover {
-    color: var(--color-text-seconadry);
+.directory__path-item a:hover {
+    color: var(--color-text-onseconadry);
     transition: color .2s;
 }
 
