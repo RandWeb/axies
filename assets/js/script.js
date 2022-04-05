@@ -158,5 +158,5 @@ window.addEventListener('load', function () {
     header.style.display = 'flex';
     main.style.display = 'flex';
     footer.style.display = 'flex';
+    audio.pause();
 })
-
